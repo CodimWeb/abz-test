@@ -7,7 +7,6 @@ const initialState = {
 }
 
 export default function getUsers(state = initialState, action) {
-    console.log(action)
     switch(action.type) {
         case GET_USERS :
             return {
