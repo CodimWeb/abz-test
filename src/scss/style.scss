@@ -1,0 +1,42 @@
+// BS Abstract
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities/text";
+@import "~bootstrap/scss/utilities/display";
+
+//BS reboot
+@import "~bootstrap/scss/reboot";
+
+// BS grid
+@import "~bootstrap/scss/grid";
+
+//BS components
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/close";
+
+//custom styles
+
+//abstract
+@import 'abstract/variables';
+
+//base
+@import 'base/fonts';
+@import 'base/ui';
+@import 'base/typography';
+
+//components
+@import 'components/app';
+@import 'components/grid';
+@import 'components/buttons';
+@import 'components/input';
+@import 'components/links';
+@import 'components/header';
+@import 'components/nav-menu';
+@import 'components/requirements';
+@import 'components/about';
+@import 'components/user';
+@import 'components/register';
+@import 'components/footer';
+@import 'components/modal';

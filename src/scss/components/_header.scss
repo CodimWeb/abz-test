@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    align-items: center;
+    // width: 100%;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: $white;
+    z-index: 100;
+    
+
+    &__logo {
+        max-width: 136px;
+    }
+
+    &__row {
+        align-items: center;
+    }
+
+    &__panel {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media (max-width: 1023px) {
+            display: block;
+            width: 290px;
+            height: 100%;
+            padding: 7px 15px 7px 15px;
+            background: $white;
+            position: fixed;
+            left: -290px;
+            top: 0;
+            z-index: 6;
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+            overflow-y: auto;
+        }
+    }
+
+    &__nav {
+        flex: 0 0 66.6666%;
+        max-width: 66.6666%;
+
+        @media (max-width: 1023px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    &.open-menu {
+        .header__panel {
+            @media (max-width: 1023px) {
+                transform: translateX(100%);
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        height: 40px;
+    }
+}
+
+.btn-menu {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    width: auto;
+    height: auto;
+    padding: 0;
+
+    @media (max-width: 1023px) {
+        display: inline-block;
+    }
+}
+
+.mobile-backdrop {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.7);
+    z-index: 5;
+}
+
+.open-menu .mobile-backdrop {
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}
+
+.mobile-logo {
+    display: none;
+
+    @media (max-width: 1023px) {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.modal-open .header  {
+    right: 17px;
+
+    @media (max-width: 1199px) {
+        right: 0;
+    }
+}

@@ -1,0 +1,37 @@
+.modal {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 10px;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal-dialog {
+    margin: auto;
+}
+
+.modal-success {
+    .modal-dialog {
+        max-width: 394px;
+    }
+
+    .modal-header {
+        padding: 13px 15px 9px;
+
+        .close {
+            margin: -4px -9px 0 0;
+            padding: 10px;
+            outline: none !important;
+        }
+    }
+
+    .modal-subtitle {
+        margin: 0;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+}
+

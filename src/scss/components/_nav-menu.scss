@@ -1,0 +1,41 @@
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    &__item {
+        margin-right: 29px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 1023px) {
+            margin: 0 0 19px;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        &.active {
+            color: $secondary;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        display: block;
+        border-top: 1px solid $gray-200;
+        margin: 0 -15px 24px;
+        padding: 24px 15px 0;
+    }
+}
+
+.mobile-menu {
+    display: none;
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}

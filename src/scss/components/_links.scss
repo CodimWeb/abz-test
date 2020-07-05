@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.link {
+    color: $gray-800;
+
+    &:hover {
+        color: $btn-primary;
+    }
+}
+
+.link-white {
+    color: $white;
+
+    &:hover {
+        color: $btn-primary;
+    }
+}

@@ -1,0 +1,48 @@
+.requirements {
+    min-height: 600px;
+    padding: 108px 0 20px;
+    background: url(../img/banner-photo.jpg) no-repeat top center;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 23px;
+        text-transform: uppercase;
+        color: $white;
+        line-height: 54px;
+
+        @media (max-width: 1023px) {
+            line-height: 44px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 767px) {
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__subtitle {
+        line-height: 24px;
+        color: $white;
+        margin-bottom: 34px;
+        margin-right: 16px;
+
+        @media (max-width: 767px) {
+            margin-right: 0;
+            margin-bottom: 23px;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        min-height: 500px;
+        padding: 58px 0 20px;
+        background-image: url(../img/banner-photo-tablet.jpg);
+    }
+
+    @media (max-width: 767px) {
+        min-height: 400px;
+        padding: 67px 0 20px;
+        text-align: center;
+        background-image: url(../img/banner-photo-mobile.jpg);
+    }
+}
